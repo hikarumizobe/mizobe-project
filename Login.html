@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    .login-body {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(images/bg.jpg);
+        flex-wrap: wrap;
+    }
+
+    .login-box {
+        width: 280px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    .login-box h1 {
+        float: left;
+        font-size: 40px;
+        border-bottom: 6px solid #387cdc;
+        margin-bottom: 15px;
+        padding: 5px 0;
+        color: #eaecfb;
+    }
+
+    .textbox {
+        width: 100%;
+        overflow: hidden;
+        font-size: 20px;
+        padding: 8px 0;
+        margin: 8px 0;
+        border-bottom: 1px solid #eaecfb;
+    }
+
+    .textbox i {
+        float: left;
+        text-align: center;
+    }
+
+    .textbox input {
+        border: none;
+        outline: none;
+        background: none;
+        color: white;
+        font-size: 18px;
+        width: 80%;
+        float: left;
+        margin: 0 10px;
+    }
+
+    .btn {
+        width: 100%;
+        background: none;
+        border: 2px solid #387cdc;
+        color: #eaecfb;
+        padding: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 10px 0;
+    }
+</style>
+
+<body>
+    <section class="header">
+        <nav class="top-nav">
+            <a href="index.html" style="margin-left: 50px;">
+                <img src="images/logo1.png" height="50" width="120">
+            </a>
+            <a href="index.html" style="color: black;letter-spacing: 3px;">
+                <h2>KICKZ4U</h2>
+            </a>
+            <ul class="menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="login.html" class="inactive1">Login</a></li>
+                <li><a href="#" class="inactive1">Registration</a></li>
+                <li><a href="#" class="inactive1">Catalogue</a></li>
+                <li><a href="#" class="inactive1">Cart</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="login-body">
+        <div class="login-box">
+            <h1> Log In </h1>
+            <div class="textbox">
+                <i><img src="images/user.png" alt="user" width="20" height="20"></i>
+                <input type="text" placeholder="Username" name="" value="">
+            </div>
+            <div class="textbox">
+                <i><img src="images/password.png" alt="password" width="20" height="20"></i>
+                <input type="password" placeholder="Password" name="" value="">
+            </div>
+            <input class="btn" type="button" name="" value="Log in">
+        </div>
+    </section>
+</body>
+
+</html>

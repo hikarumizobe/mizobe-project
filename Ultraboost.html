@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav class="top-nav">
+            <a href="index.html" style="margin-left: 50px;">
+                <img src="images/logo1.png" height="50" width="120">
+            </a>
+            <a href="index.html" style="color: black;">
+                <h2>KICKZ4U</h2>
+            </a>
+            <ul class="menu">
+                <li><a href="index.html" class="inactive1">Home</a></li>
+                <li><a href="login.html" class="inactive1">Login</a></li>
+                <li><a href="#" class="inactive1">Registration</a></li>
+                <li><a href="#" class="inactive1">Catalogue</a></li>
+                <li><a href="#" class="inactive1">Cart</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="item-content">
+        <div class="item-gallery">
+            <div>
+                <div class="container">
+                    <div class="Slides">
+                        <div class="numbertext">1 / 7</div>
+                        <img src="images/Adidas/Ultraboost summer/Ultraboost-side.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">2 / 7</div>
+                        <img src="images/Adidas/Ultraboost summer/Ultraboost-other-side.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">3 / 7</div>
+                        <img src="images/Adidas/Ultraboost summer/Ultraboost-sole.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">4 / 7</div>
+                        <img src="images/Adidas/Ultraboost summer/Ultraboost-top.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">5 / 7</div>
+                        <img src="images/Adidas/Ultraboost summer/Ultraboost-angled.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">6 / 7</div>
+                        <img src="images/Adidas/Ultraboost summer/Ultraboost-back-angled.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">7 / 7</div>
+                        <img src="images/Adidas/Ultraboost summer/Ultraboost-side-by-side.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column7">
+                            <img class="thumbnails" src="images/Adidas/Ultraboost summer/Ultraboost-side.jpg" onclick="currentSlide(1)" alt="Outside View">
+                        </div>
+                        <div class="column7">
+                            <img class="thumbnails" src="images/Adidas/Ultraboost summer/Ultraboost-other-side.jpg" onclick="currentSlide(2)" alt="Inside View">
+                        </div>
+                        <div class="column7">
+                            <img class="thumbnails" src="images/Adidas/Ultraboost summer/Ultraboost-sole.jpg" onclick="currentSlide(3)" alt="Sole View">
+                        </div>
+                        <div class="column7">
+                            <img class="thumbnails" src="images/Adidas/Ultraboost summer/Ultraboost-top.jpg" onclick="currentSlide(4)" alt="Top View">
+                        </div>
+                        <div class="column7">
+                            <img class="thumbnails" src="images/Adidas/Ultraboost summer/Ultraboost-angled.jpg" onclick="currentSlide(5)" alt="Angled Front View">
+                        </div>
+                        <div class="column7">
+                            <img class="thumbnails" src="images/Adidas/Ultraboost summer/Ultraboost-back-angled.jpg" onclick="currentSlide(6)" alt="Angled Back View">
+                        </div>
+                        <div class="column7">
+                            <img class="thumbnails" src="images/Adidas/Ultraboost summer/Ultraboost-side-by-side.jpg" onclick="currentSlide(7)" alt="Outside and Inside View">
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("Slides");
+                        var dots = document.getElementsByClassName("thumbnails");
+                        var captionText = document.getElementById("caption");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        captionText.innerHTML = dots[slideIndex - 1].alt;
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="item-info">
+            <div>
+                <h1>Ultraboost Summer</h1>
+                <hr style="border-top: 3px solid black; border-radius: 5px;">
+                <h3 style="font-size: 20px;">Adidas</h3>
+                <div style="color: #4c4c4c;">Running Shoes</div>
+                <h3 style="font-size: 28px;">₱9,500</h3>
+                <h3>Product Details:</h3>
+                WARM-WEATHER RUNNING SHOES CO-CREATED BY HIROKO TAKAHASHI.
+                <br>
+                <p style="text-indent: 50px; text-align: justify;">
+                    You might be sweaty and two uphill kilometres from home. But you can draw energy and inspiration from the athletes who'll compete this summer when you wear these adidas running shoes. They're designed in collaboration with Tokyo artist Hiroko Takahashi and her label, Hirocoledge. The responsive midsole is decked out in circular shapes, a favourite pattern of hers for its neutrality in gender, nationality and time.
+                    <br><br>
+                    From problem to performance
+                    <br>
+                    This shoe's upper is made with Primeblue, a high-performance recycled material containing at least 50% Parley Ocean Plastic.
+                </p>
+                <ul style="list-style: square; text-align: Justify;">
+                    <li><b>Lace closure</b></li>
+                    <li><b>adidas Primeknit textile upper</b></li>
+                    <li><b>Breathable SUMMER.RDY</b></li>
+                    <li><b>Warm-weather running shoes</b></li>
+                    <li><b>Responsive Boost midsole</b></li>
+                    <li><b>Rubber outsole</b></li>
+                    <li><b>Color Shown:</b>Core Black / Cloud White / Signal Green</li>
+                </ul>
+                <br>
+                <a class="add-to-cart-btn" href="#">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div>
+            DISCLAIMER: All Information and pictures used in this project is not mine. This is for project purposes only.
+        </div>
+    </div>
+</body>
+
+</html>

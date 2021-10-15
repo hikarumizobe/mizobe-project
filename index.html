@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav class="top-nav">
+            <a href="index.html" style="margin-left: 50px;">
+                <img src="images/logo1.png" height="50" width="120">
+            </a>
+            <a href="index.html" style="color: black;letter-spacing: 3px;">
+                <h2>KICKZ4U</h2>
+            </a>
+            <ul class="menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="login.html" class="inactive1">Login</a></li>
+                <li><a href="#" class="inactive1">Registration</a></li>
+                <li><a href="#" class="inactive1">Catalogue</a></li>
+                <li><a href="#" class="inactive1">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="header-Feature">
+            <div class="main-heading">
+                <h1>Be Bigger, Better, and Stronger with J's</h1>
+                <p style="text-align: justify;">Watch out for NEW Arrivals including Jordon's. Pre-order NOW to
+                 avail and be the first to purchase the NEW Arrivals! We're waiting for you!</p>
+                <a class="main-btn" href="#">Go Now</a>
+            </div>
+        </div>
+    </section>
+    <section class="mainContent">
+        <div class="left-nav">
+            <nav class="brand-list">
+                <ul class="menu">
+                    <h2>Brand</h2>
+                    <li><a href="#" class="inactive2">Nike</a></li>
+                    <li><a href="#" class="inactive2">Adidas</a></li>
+                    <li><a href="#" class="inactive2">Mizuno</a></li>
+                    <li><a href="#" class="inactive2">Under Armour</a></li>
+                    <li><a href="#" class="inactive2">Asics</a></li>
+                    <li><a href="#" class="inactive2">Reebok</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mainFrame">
+            <ul>
+                <li class="item-list">
+                    <a href="kd14.html">
+                        <div class="item-box">
+                            <div class="i-img">
+                                <img src="images/Nike/KD14/kd14-side.jpg">
+                            </div>
+                            <div class="i-text">
+                                <h4>KD 14</h4>
+                                <b>Nike</b>
+                                <b style="color: #4c4c4c;">₱7,795</b>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list">
+                    <a href="Ultraboost.html">
+                        <div class="item-box">
+                            <div class="i-img">
+                                <img src="images/Adidas/Ultraboost summer/Ultraboost-side.jpg">
+                            </div>
+                            <div class="i-text">
+                                <h4>ULTRABOOST</h4>
+                                <b>Adidas</b>
+                                <b style="color: #4c4c4c;">₱9,500</b>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list">
+                    <a href="Wave-Momentum-Mid.html">
+                        <div class="item-box">
+                            <div class="i-img">
+                                <img src="images/Mizuno/Wave Momentum Mid Volleyball Men Shoes/wave-momentum-mid-side-thumbnail.jpg">
+                            </div>
+                            <div class="i-text">
+                                <h4>WAVE MOMENTUM MID</h4>
+                                <b>Mizuno</b>
+                                <b style="color: #4c4c4c;">₱7,598</b>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-list">
+                    <a href="curry-flow-8.html">
+                        <div class="item-box">
+                            <div class="i-img">
+                                <img src="images/Under Armour/Curry Flow 8/Curry-Flow-8-other-side.jpg">
+                            </div>
+                            <div class="i-text">
+                                <h4>CURRY FLOW 8</h4>
+                                <b>Under Armour</b>
+                                <b style="color: #4c4c4c;">₱7,995</b>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list">
+                    <a href="metaspeed-edge.html">
+                        <div class="item-box">
+                            <div class="i-img">
+                                <img src="images/asics/Metaspeed Edge/Metaspeed-edge-side.jpg">
+                            </div>
+                            <div class="i-text">
+                                <h4>METASPEED EDGE</h4>
+                                <b>Asics</b>
+                                <b style="color: #4c4c4c;">₱13,890</b>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list">
+                    <a href="Nanoshoes-X.html">
+                        <div class="item-box">
+                            <div class="i-img">
+                                <img src="images/Reebok/Reebok Nano X/Reebok-nano-x-side.jpg">
+                            </div>
+                            <div class="i-text">
+                                <h4>NANO X</h4>
+                                <b>Reebok</b>
+                                <b style="color: #4c4c4c;">₱6,500</b>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div>
+            DISCLAIMER: All Information and pictures used in this project is not mine. This is for project purposes only.
+        </div>
+    </div>
+</body>
+
+</html>

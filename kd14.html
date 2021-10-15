@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav class="top-nav">
+            <a href="index.html" style="margin-left: 50px;">
+                <img src="images/logo1.png" height="50" width="120">
+            </a>
+            <a href="index.html" style="color: black;letter-spacing: 3px;">
+                <h2>KICKZ4U</h2>
+            </a>
+            <ul class="menu">
+                <li><a href="index.html" class="inactive1">Home</a></li>
+                <li><a href="login.html" class="inactive1">Login</a></li>
+                <li><a href="#" class="inactive1">Registration</a></li>
+                <li><a href="#" class="inactive1">Catalogue</a></li>
+                <li><a href="#" class="inactive1">Cart</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="item-content">
+        <div class="item-gallery">
+            <div>
+                <div class="container">
+                    <div class="Slides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/Nike/KD14/kd14-side.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/Nike/KD14/kd14-other-side.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images/Nike/KD14/kd14-sole.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/Nike/KD14/kd14-top.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="images/Nike/KD14/kd-14-back.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="images/Nike/KD14/kd-14-angled.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column6">
+                            <img class="thumbnails" src="images/Nike/KD14/kd14-side.jpg" style="width:100%" onclick="currentSlide(1)" alt="Outside View">
+                        </div>
+                        <div class="column6">
+                            <img class="thumbnails" src="images/Nike/KD14/kd14-other-side.jpg" style="width:100%" onclick="currentSlide(2)" alt="Inside View">
+                        </div>
+                        <div class="column6">
+                            <img class="thumbnails" src="images/Nike/KD14/kd14-sole.jpg" style="width:100%" onclick="currentSlide(3)" alt="Sole View">
+                        </div>
+                        <div class="column6">
+                            <img class="thumbnails" src="images/Nike/KD14/kd14-top.jpg" style="width:100%" onclick="currentSlide(4)" alt="Top View">
+                        </div>
+                        <div class="column6">
+                            <img class="thumbnails" src="images/Nike/KD14/kd-14-back.jpg" style="width:100%" onclick="currentSlide(5)" alt="Back View">
+                        </div>
+                        <div class="column6">
+                            <img class="thumbnails" src="images/Nike/KD14/kd-14-angled.jpg" style="width:100%" onclick="currentSlide(6)" alt="Angled Front View">
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("Slides");
+                        var dots = document.getElementsByClassName("thumbnails");
+                        var captionText = document.getElementById("caption");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        captionText.innerHTML = dots[slideIndex - 1].alt;
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="item-info">
+            <div>
+                <h1>KD14</h1>
+                <hr style="border-top: 3px solid black; border-radius: 5px;">
+                <h3 style="font-size: 20px;">Nike</h3>
+                <div style="color: #4c4c4c;">Men's Basketball Shoes</div>
+                <h3 style="font-size: 28px;">₱7,795</h3>
+                <h3>Product Details:</h3>
+                FEEL FRESH, PLAY LONG.
+                <br>
+                <p style="text-indent: 50px; text-align: justify;">
+                    Kevin Durant lurks on the wing, waiting for the right time to strike before slicing his way through defences.The KD14 EP is designed to help versatile, relentless players like KD feel fresh all game long.Multi-layer mesh and a midfoot strap help reduce the foot's movements inside the shoe.Full-length Zoom Air cushioning plus Cushlon foam give back energy for lasting performance.This EP version uses an extra-durable sole that's ideal for outdoor courts.</p>
+                <ul style="list-style: square; text-align: Justify;">
+                    <li><b>Zero-Distraction Fit, Broken-In Feel:</b> Multi-layer mesh in the upper is lightweight and dimensional with a broken-in feel.Added thickness in strategic areas helps to keep your foot in place by reducing small movements.</li>
+                    <li><b>Strap In:</b> A hook-and-loop strap wraps over the top of the laces for support and a secure fit.It's a subtle nod to the strap of the KD4 and takes inspiration from the shape of the grim reaper's scythe.</li>
+                    <li><b>Ultimate Responsive Sensation:</b> The full-length Air Zoom Strobel unit is stitched directly to the upper.It helps cut unnecessary weight and provides full-foot responsiveness.Cushlon foam adds a soft, comfortable sensation.</li>
+                    <li><b>Tuned Traction:</b> Grooves and ridges in the sole help provide multi-directional traction and court feel.A stiff piece under the arch helps keep the shoe stable.Both shoes together reveal the face of a skull.</li>
+                    <li><b>Color Shown:</b> Lime Ice/Pearl White/Light Mulberry</li>
+                    <li>The extra-durable sole is designed to play on outdoor courts.</li>
+                    <li>Stiff piece on the outer edge provides midfoot stability.</li>
+                </ul>
+                <br>
+                <a class="add-to-cart-btn" href="#">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div>
+            DISCLAIMER: All Information and pictures used in this project is not mine. This is for project purposes only.
+        </div>
+    </div>
+</body>
+
+</html>
