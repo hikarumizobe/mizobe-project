@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav class="top-nav">
+            <a href="index.html" style="margin-left: 50px;">
+                <img src="images/logo1.png" height="50" width="120">
+            </a>
+            <a href="index.html" style="color: black;">
+                <h2>KICKZ4U</h2>
+            </a>
+            <ul class="menu">
+                <li><a href="index.html" class="inactive1">Home</a></li>
+                <li><a href="login.html" class="inactive1">Login</a></li>
+                <li><a href="#" class="inactive1">Registration</a></li>
+                <li><a href="#" class="inactive1">Catalogue</a></li>
+                <li><a href="#" class="inactive1">Cart</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="item-content">
+        <div class="item-gallery">
+            <div>
+                <div class="container">
+                    <div class="Slides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="images/Under Armour/Curry Flow 8/Curry-Flow-8-side.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="images/Under Armour/Curry Flow 8/Curry-Flow-8-other-side.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="images/Under Armour/Curry Flow 8/Curry-Flow-8-sole.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="images/Under Armour/Curry Flow 8/Curry-Flow-8-top.jpg" style="width:100%">
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="images/Under Armour/Curry Flow 8/Curry-Flow-8-Angled.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column5">
+                            <img class="thumbnails" src="images/Under Armour/Curry Flow 8/Curry-Flow-8-side.jpg"
+                                onclick="currentSlide(1)" alt="Outside View">
+                        </div>
+                        <div class="column5">
+                            <img class="thumbnails" src="images/Under Armour/Curry Flow 8/Curry-Flow-8-other-side.jpg"
+                                onclick="currentSlide(2)" alt="Inside View">
+                        </div>
+                        <div class="column5">
+                            <img class="thumbnails" src="images/Under Armour/Curry Flow 8/Curry-Flow-8-sole.jpg"
+                                onclick="currentSlide(3)" alt="Sole View">
+                        </div>
+                        <div class="column5">
+                            <img class="thumbnails" src="images/Under Armour/Curry Flow 8/Curry-Flow-8-top.jpg"
+                                onclick="currentSlide(4)" alt="Top View">
+                        </div>
+                        <div class="column5">
+                            <img class="thumbnails" src="images/Under Armour/Curry Flow 8/Curry-Flow-8-Angled.jpg"
+                                onclick="currentSlide(5)" alt="Angled Front View">
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("Slides");
+                        var dots = document.getElementsByClassName("thumbnails");
+                        var captionText = document.getElementById("caption");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        captionText.innerHTML = dots[slideIndex - 1].alt;
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="item-info">
+            <div>
+                <h1>Curry Flow 8</h1>
+                <hr style="border-top: 3px solid black; border-radius: 5px;">
+                <h3 style="font-size: 20px;">Under Armour</h3>
+                <div style="color: #4c4c4c;">Men's Basketball Shoes</div>
+                <h3 style="font-size: 28px;">₱7,995</h3>
+                <h3>Product Details:</h3>
+                <p style="text-indent: 50px; text-align: justify;">
+                    You've never felt a shoe like this before. The Curry Flow 8 is totally rubberless, making it lighter
+                    and ridiculously grippy. It gives you a better court feel, lets you start and stop on a dime, and
+                    get off the ground faster.
+                </p>
+                <ul style="list-style: square; text-align: Justify;">
+                    <li>Breathable, lightweight flat knit upper with synthetic overlays for strategic support</li>
+                    <li>Bi-directional internal fit structure with independent layers for lockdown & lateral containment
+                    </li>
+                    <li>Bootie construction provides a sock-like fit & feel with a high-stretch collar for easy entry
+                    </li>
+                    <li>New UA Flow cushioning technology is super-light, bouncy & provides insane grip</li>
+                    <li>Flexible Pebax® plate adds support & stability to every move</li>
+                    <li>Durable UA Flow outsole provides better court feel so you can cut & stop/start faster than ever
+                        before</li>
+                    <li><b>Color Shown:</b>Gray/White</li>
+                </ul>
+                <br>
+                <a class="add-to-cart-btn" href="#">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div>
+            DISCLAIMER: All Information and pictures used in this project is not mine. This is for project purposes
+            only.
+        </div>
+    </div>
+</body>
+
+</html>
